@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/form.css")
+        title publicar
+    body 
+
+        form(action="/publicar", method="Post")
+            input(type="text", name="nameUsuario", placeholder="Digite o nome da pessoa", maxlength="20")
+            input(type="text", name="localUsuario", placeholder="Digite a localizacao", maxlength="20")
+            input(type="url", name="imagemPoatagem", placeholder="Insira o link da  Imagem")
+            textarea(name="descricaoPostagem", placeholder="Digite a descricao") 
+            input(type="submit", value="enviar")
